@@ -15,6 +15,13 @@ OR
 ```bash
 $ ./python
 ```
+
+On container bash run
+
+```bash
+$ python3 app.py
+```
+
 ## Accessing the main page
 
 Address: http://176.0.0.2
