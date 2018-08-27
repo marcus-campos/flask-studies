@@ -15,6 +15,9 @@ OR
 ```bash
 ./python
 ```
+## Accessing the main page
+
+Address: http://176.0.0.2
 
 ## Contact
 
