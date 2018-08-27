@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+docker-compose build && docker-compose run --rm python_app bash

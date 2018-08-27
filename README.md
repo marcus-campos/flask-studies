@@ -2,18 +2,18 @@
 
 This is a repository only for Python Flask studies
 
-## Setup
+## Run container
 
-Run the setup bash file
+Run the console bash file
 
 ```bash
-	bash setup
+bash console
 ```
 
 OR
 
 ```bash
-	./setup
+./console
 ```
 
 ## Contact
