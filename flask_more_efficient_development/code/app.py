@@ -9,7 +9,7 @@ items = []
 class Item(Resource):
 	def get(self, name):
 		item = next(filter(lambda x: x['name'] == name, items), None)
-		return {'item': item}, 200 if item is note None else 404
+		return {'item': item}, 200 if item is not None else 404
 
 	def post(self, name):
 		data = request.get_json()
