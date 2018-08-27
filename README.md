@@ -54,6 +54,10 @@ $ deactivate
 
 Address: http://176.0.0.2
 
+## Get Postman colletion to test
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/8f7dd9696cff0ec40450)
+
 ## Contact
 
 Marcus Vinícius Campos - campos.v.marcus@gmail.com
