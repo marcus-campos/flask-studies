@@ -1,7 +1,21 @@
-version: '3'
+version: '2'
 services:
   python_app:
+    ports:
+      - "5000:5000"
     build: .
     volumes:
-      - "$PWD:/usr/src/app"
+      - "$PWD:/app"
       - "$HOME:/home"
+    networks:
+      python_net:
+        ipv4_address: 176.0.0.2
+
+networks:
+  python_net:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 176.0.0.0/24
+          gateway: 176.0.0.1
