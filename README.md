@@ -16,10 +16,38 @@ OR
 $ ./python
 ```
 
-On container bash run
+### For simple_api
+
+Enter the directory
+
+```bash
+$ cd simple_api
+```
+
+Start the server
 
 ```bash
 $ python3 app.py
+```
+
+### For flask_more_efficient_development
+
+Enter the directory
+
+```bash
+$ cd flask_more_efficient_development
+```
+
+Activate the virtualenv
+
+```bash
+$ source venv/bin/activate
+```
+
+To disable virtualenv (into virtualenv)
+
+```bash
+$ deactivate
 ```
 
 ## Accessing the main page
