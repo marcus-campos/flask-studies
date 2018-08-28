@@ -28,6 +28,14 @@ class Item(Resource):
 		items.append(item)
 		return item, 201
 
+	@jwt_required()
+	def delete(self, name):
+		global items
+		if next(filter(lambda x: x['name'] == name, items), None):
+			items = list(filter(lambda x: x['name'] != name, items))
+			return {'message': 'Item deleted'}
+		return {'message': "The item with name '{}' not exists.".format(name)}, 400
+
 class ItemList(Resource):
 	@jwt_required()
 	def get(self):
