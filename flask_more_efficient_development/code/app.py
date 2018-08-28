@@ -36,6 +36,20 @@ class Item(Resource):
 			return {'message': 'Item deleted'}
 		return {'message': "The item with name '{}' not exists.".format(name)}, 400
 
+	@jwt_required()
+	def put(self, name):
+		data = request.get_json()
+		item = next(filter(lambda x: x['name'] == name, items), None)
+		if item is None:
+			item = {
+				'name': name,
+				'price': data['price']
+			}
+			items.append(item)
+		else:
+			item.update(data)
+		return item
+
 class ItemList(Resource):
 	@jwt_required()
 	def get(self):
