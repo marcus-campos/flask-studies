@@ -50,6 +50,12 @@ To disable virtualenv (into virtualenv)
 $ deactivate
 ```
 
+Start the server
+
+```bash
+$ python app.py
+```
+
 ## Accessing the main page
 
 Address: http://176.0.0.2
