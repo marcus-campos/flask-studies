@@ -56,6 +56,32 @@ Start the server
 $ python app.py
 ```
 
+### For flask_with_sql_database
+
+Enter the directory
+
+```bash
+$ cd flask_with_sql_database
+```
+
+Activate the virtualenv
+
+```bash
+$ source venv/bin/activate
+```
+
+To disable virtualenv (into virtualenv)
+
+```bash
+$ deactivate
+```
+
+Start the server
+
+```bash
+$ python app.py
+```
+
 ## Accessing the main page
 
 Address: http://176.0.0.2
