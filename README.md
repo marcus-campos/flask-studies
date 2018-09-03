@@ -7,13 +7,13 @@ This is a repository only for Python Flask studies
 Run the console bash file
 
 ```bash
-$ bash python
+$ bash console
 ```
 
 OR
 
 ```bash
-$ ./python
+$ ./console
 ```
 
 ### For simple_api
